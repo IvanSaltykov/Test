@@ -1,0 +1,73 @@
+﻿<Window x:Class="TestApp.CreatePlayer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestApp"
+        mc:Ignorable="d"
+        Title="CreatePlayer" SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
+    <Grid
+        Margin="50, 10">
+        <StackPanel Orientation="Vertical">
+            <StackPanel
+                Orientation="Horizontal">
+                <StackPanel
+                Orientation="Vertical">
+                    <TextBlock
+                    Text="Атака: "/>
+                    <TextBlock
+                    Text="Защита: "/>
+                    <TextBlock
+                    Text="Здоровье: "/>
+                    <TextBlock
+                    Text="Максимальный урон: "/>
+                    <TextBlock
+                    Text="Минимальный урон: "/>
+                </StackPanel>
+                <StackPanel
+                Orientation="Vertical">
+                    <TextBox
+                    x:Name="textBoxCrearePlayerAttack"
+                    Width="100"
+                    Margin="10,0,0,0"
+                    PreviewTextInput="PreviewTextInput"/>
+                    <TextBox
+                    x:Name="textBoxCrearePlayerProtection"
+                    Width="100"
+                    Margin="10,0,0,0"
+                    PreviewTextInput="PreviewTextInput"/>
+                    <TextBox
+                    x:Name="textBoxCrearePlayerHealth"
+                    Width="100"
+                    Margin="10,0,0,0"
+                    PreviewTextInput="PreviewTextInput"/>
+                    <TextBox
+                    x:Name="textBoxCrearePlayerDamageMax"
+                    Width="100"
+                    Margin="10,0,0,0"
+                    PreviewTextInput="PreviewTextInput"/>
+                    <TextBox
+                    x:Name="textBoxCrearePlayerDamageMin"
+                    Width="100"
+                    Margin="10,0,0,0"
+                    PreviewTextInput="PreviewTextInput"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal">
+                <Button
+                    Name="buttonCreatePlayerCancel"
+                    Content="Отмена"
+                    Click="buttonCreatePlayerCancel_Click"
+                    Margin="120,0,0,0"/>
+                <Button
+                    Name="buttonCreatePlayer"
+                    Content="Создать"
+                    Click="buttonCreatePlayer_Click"
+                    Margin="10, 0,0,0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
