@@ -87,11 +87,11 @@ namespace TestApp
                     _damageMax = value;
             }
         }
-        protected int modifier(int attacking)
+        private int modifier(int attacking)
         {
             return attacking - _protection + 1;
         }
-        protected bool checkSuccessAttack(int attacking)
+        private bool checkSuccessAttack(int attacking)
         {
             int attack = modifier(attacking);
             int index = 1;
